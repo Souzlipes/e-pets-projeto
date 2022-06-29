@@ -1,0 +1,406 @@
+/*Universais*/
+*{
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0 auto;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a{
+    text-decoration:none;
+}
+/*Universais*/
+
+/*Cabecalho - inicio*/
+.header{
+    max-width: 100%;
+    background-color: rgb(123, 0, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 12px;
+
+}
+.header input{
+    width:60%;
+    background-color:transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom:2px solid #ffff00;
+    color: white;
+    margin-left:4%;
+}
+.header input::placeholder{
+    color: #ffff008c;
+}
+header a{
+    color: #ffff00;
+    text-decoration: none;
+}
+
+.link_menu:hover{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    border-bottom: 2px solid #ffffff;
+}
+.header img{
+    max-width: 100px;
+    margin-right:0;
+}
+.menu li{
+    display: inline-block;
+    padding-left: 25px;
+}
+#menuToggle {
+    display: none;
+  }
+.menu-icon {
+    display: none;
+}
+.sing_menu{
+    display: none;
+}
+
+/*Cabecalho - fim*/
+
+/*Container - Inicio*/
+.bunner{
+    padding-top:20px;
+    text-align: center;
+    color: rgb(123, 0, 255);
+}
+.bunner img{
+    padding: 20px;
+    max-width:100%;
+}
+.bunner p{
+    display: none;
+}
+.bunner a{
+    display: block;
+    color: rgb(123, 0, 255);
+    text-decoration: none;
+    max-width:20%;
+    margin-bottom: 70px;
+}
+.bunner a:hover{
+    color: rgb(123, 0, 255);
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 2px solid rgb(123, 0, 255);
+}
+.bunner img:hover{
+    opacity: 0.7;
+}
+button.slick-prev{
+    font-size: 0px;
+    border:none;
+    width: 32px;
+    height: 32px;
+    z-index: 9;
+    top: 45%;
+    right: 100%;
+    position: absolute;
+    background-color: transparent;
+    background-image: url(../img/icon/arrow-left.png);
+    background-repeat: no-repeat;
+}
+button.slick-next{
+    font-size: 0px;
+    border:none;
+    width: 32px;
+    height: 32px;
+    z-index: 9;
+    top: 45%;
+    left: 100%;
+    position: absolute;
+    background-color: transparent;
+    background-image: url(../img/icon/arrow-right.png);
+    background-repeat: no-repeat;
+}
+
+#cep_in{
+    width:20%;
+    background-color:transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom:2px solid #ffff00;
+    color: black;
+    margin-left:4%;
+}
+#search{
+    font-size: 0px;
+    border:none;
+    width: 32px;
+    height: 32px;
+    z-index: 9;
+    position: absolute;
+    background-color: transparent;
+    background-image: url(../img/icon/search.png);
+    background-repeat: no-repeat;
+}
+
+.slide{
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(69, 53, 71, 0.11);
+}
+main h1{
+    padding-top:20px;
+    text-align: center;
+    color: rgb(123, 0, 255);
+}
+.slide img{
+    max-width:600px;
+    padding: 20px;
+
+}
+.slide img:hover{
+    opacity:0.7;
+}
+
+.infor_pet{
+    font-family:sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.produtos{
+    margin-top: 20px;
+    padding: 20px;
+}
+.produtos img{
+    max-width: 480px;
+    height: 300px;
+    padding-bottom: 20px;
+}
+.slide{
+    margin-bottom:100px;
+}
+
+.servicos{
+    display: flex;
+    max-width:100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+}
+.servicos img{
+    width: 100%;
+    height: 500px;
+}
+.servicos img:hover{
+    
+    opacity:0.7;
+}
+/*Container - Fim*/
+
+/*Footer - Inicio*/
+.footer{
+    max-width: 100%;
+    height: auto;
+    margin-top: 60px;
+    padding:0px;
+    text-align: right;
+    color: #ffff00;
+    background-color: rgb(123, 0, 255);
+    display:flex;
+}
+.footer img{
+    max-width: 100px;
+    margin-right:0;
+}
+.footer h6{
+    padding-top: 40px;
+    text-align: center;
+}
+
+.footer a{
+    color: #ffff00;
+    text-decoration: none;
+}
+.menu_footer{
+    padding-top: 20px;
+}
+/*Footer - Fim*/
+
+.infor_pet{
+    text-align: justify;
+}
+
+/*Medias Queries - Inicio*/
+@media screen and (max-width:850px){
+    main{
+        margin-top: 10%;
+    }
+    .slick-list {
+        margin-left: -6%;
+        margin-right: 1px;
+    }
+    .sing_menu{
+        display: block;
+    }
+    .sing{
+        display: none ;
+    }
+
+    .menu {
+        display: flex;
+        position: fixed;
+        flex-wrap: wrap;
+        align-content: center;
+        top: 0px;
+        width: 100%;
+        height: 0%;
+        background-color: rgba(48, 1, 98, 0.706);
+        overflow: hidden;
+        -webkit-transition: height 0.3s;
+        -moz-transition: height 0.3s;
+        -ms-transition: height 0.3s;
+        -o-transition: height 0.3s;
+        transition: height 0.3s;
+    }
+    .menu li{
+        display: block;
+    }
+    
+    .menu a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+        color:#ffff55;
+    }
+    .menu-icon {
+        width: 50px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 31px;
+        right: 30px;
+        line-height: 60px;
+        color: white;
+        z-index: 999;
+    }
+    #menuToggle:checked ~ label i:nth-child(2) {
+      display: block;
+    }
+    #menuToggle:checked ~ label i:first-child {
+      display: none;
+    }
+    #menuToggle:not(:checked) ~ label i:first-child {
+      display: block;
+    }
+    #menuToggle:not(:checked) ~ label i:nth-child(2) {
+      display: none;
+    }
+  
+    #menuToggle:checked ~ nav {
+        height: 100%;
+    }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1000px) {
+
+    .header{        
+        position: fixed;
+        top: 0px;        
+        z-index: 999;
+        max-width:100% !important;
+    }
+    .container_nav {
+        display: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    main{
+        margin-top: 17%;
+    }
+    .header input{
+        margin-right: 10px;
+    }
+
+    .sing_menu{
+        display: block;
+    }
+    .sing{
+        display: none ;
+    }
+
+    .menu {
+        display: flex;
+        position: fixed;
+        flex-wrap: wrap;
+        align-content: center;
+        top: 0px;
+        width: 100%;
+        height: 0%;
+        background-color: rgba(48, 1, 98, 0.706);
+        overflow: hidden;
+        -webkit-transition: height 0.3s;
+        -moz-transition: height 0.3s;
+        -ms-transition: height 0.3s;
+        -o-transition: height 0.3s;
+        transition: height 0.3s;
+    }
+    .menu li{
+        display: block;
+    }
+    
+    .menu a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+        color:#ffff55;
+    }
+    .menu-icon {
+        width: 50px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 31px;
+        right: 30px;
+        line-height: 60px;
+        color: white;
+        z-index: 999;
+    }
+    #menuToggle:checked ~ label i:nth-child(2) {
+      display: block;
+    }
+    #menuToggle:checked ~ label i:first-child {
+      display: none;
+    }
+    #menuToggle:not(:checked) ~ label i:first-child {
+      display: block;
+    }
+    #menuToggle:not(:checked) ~ label i:nth-child(2) {
+      display: none;
+    }
+  
+    #menuToggle:checked ~ nav {
+        height: 100%;
+    }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+
+    .produtos img{
+        max-width: 500px;
+        height: 400px;
+        padding-bottom: 20px;
+    }
+}
+/*Medias Queries - Fim*/
