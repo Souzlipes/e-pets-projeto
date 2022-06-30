@@ -1,3 +1,4 @@
+
 // link Data base
 URL = 'https://storage-epets.herokuapp.com/usuario';
 
@@ -9,6 +10,7 @@ function loginUser(){
     .then(usuario =>{
         let email_in = document.getElementById('in_email').value;
         let password_in = document.getElementById('in_password').value;
+        password_in.toString;
 
         var validar_email = new Boolean ();
         var validar_senha = new Boolean();
@@ -23,14 +25,14 @@ function loginUser(){
         
         for(i = 0; i<usuario.length; i++){            
             validar_senha = (verificaSenha(password_in, usuario[i].password));
-            console.log(email_in, validar_email);
+            console.log(email_in, validar_senha);
             if(validar_senha == true){
                 break;
             }                        
         }    
 
         if(validar_email == true && validar_senha == true){
-            window.open("http://127.0.0.1:5502/src/pag/pet_shops.html");
+            window.open("../pag/dados_clinica.html");
         }else{
             alert("Login invalido");
         } 
@@ -45,7 +47,7 @@ function verificaEmail(email, emailBD){
     return false;
 }
 function verificaSenha(password, passwordBD){
-    if(password = passwordBD){
+    if(password  == passwordBD){
         return true;
     }
     return false;
