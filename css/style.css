@@ -69,6 +69,8 @@ header a{
 
 /*Container - Inicio*/
 .bunner{
+    max-width: 100%;
+    max-height:20%;
     padding-top:20px;
     text-align: center;
     color: rgb(123, 0, 255);
