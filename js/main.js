@@ -64,8 +64,7 @@ function createUser(){
         email: document.getElementById('email').value,
         cep: document.getElementById('cep').value,
         cnpj: document.getElementById('cnpj').value,
-        password: document.getElementById('password').value,
-        opcao: document.getElementById('opcao').value           
+        password: document.getElementById('password').value       
     })
 
     fetch(URL, {

@@ -152,6 +152,8 @@ button.slick-next{
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: rgba(69, 53, 71, 0.11);
+    box-shadow: 0px 0px 31px rgba(47, 47, 47, 0.77);
+    border-radius:8px;
 }
 main h1{
     padding-top:20px;
