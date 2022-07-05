@@ -58,9 +58,9 @@ function verificaSenha(password, passwordBD){
 const cadastroForm = document.getElementById('login-form');
 
 function createUser(){
-    console.log("passando");
+    
     const usuario = JSON.stringify({
-        id: Math.floor(Math.random() * 10),
+        id: 0,
         email: document.getElementById('email').value,
         cep: document.getElementById('cep').value,
         cnpj: document.getElementById('cnpj').value,

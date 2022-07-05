@@ -15,7 +15,7 @@ fetch(URL)
                 <div class="row produtos col-12 col-md-6 col-lg-3">
                     <img src="${empresa[i].img}" alt="produtos">
                     <div class="infor_loja">
-                        <p>Petz</p>
+                        <p>${empresa[i].nome}</p>
                         <span>CEP: ${empresa[i].cep} - ${empresa[i].rua}, ${empresa[i].num} - ${empresa[i].complemento} - ${empresa[i].bairro}, ${empresa[i].cidade} - ${empresa[i].uf}</span>
                     </div>
                 </div>
@@ -38,7 +38,7 @@ function buscaCEP(cep) {
                 <div class="row produtos col-12 col-md-6 col-lg-3">
                     <img src="${empresa[i].img}" alt="produtos">
                     <div class="infor_loja">
-                        <p>Petz</p>
+                        <p>${empresa[i].nome}</p>
                         <span>CEP: ${empresa[i].cep} - ${empresa[i].rua}, ${empresa[i].num} - ${empresa[i].complemento} - ${empresa[i].bairro}, ${empresa[i].cidade} - ${empresa[i].uf}</span>
                     </div>
                 </div>
@@ -56,8 +56,9 @@ const cadastroEMP = document.getElementById('dados_emp');
 function postLoja() {
 
     const empresa = JSON.stringify({
-        id: Math.floor(Math.random() * 10),
+        id: 0,
         img: document.getElementById('img').value,
+        nome: document.getElementById('nome').value,
         telefone: document.getElementById('telefone').value,
         cep: document.getElementById('cep').value,
         rua: document.getElementById('rua').value,
